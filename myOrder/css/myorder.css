@@ -1,0 +1,109 @@
+html{
+	font-size: 36px;
+}
+header {
+	width: 10rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background: #F9FAFD;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+
+header .left {
+	width: 10%;
+	height: 100%;
+	display: flex;
+}
+
+header .left img {
+	width: 0.694444rem;
+	height: 0.694444rem;
+	margin: auto;
+}
+
+header .center {
+	width: 80%;
+	height: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+header .right {
+	width: 10%;
+	height: 100%;
+	display: flex;
+}
+
+header .right img {
+	width: 0.694444rem;
+	height: 0.694444rem;
+	margin: auto;
+}
+
+.main {
+	width: 100%;
+}
+
+.main .tabs {
+	width: 100%;
+	height: 1.388888rem;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+
+.main .tabs .tab-item {
+	width: 17%;
+	height: 100%;
+	line-height: 1.388888rem;
+	font-size: 0.361111rem;
+	text-align: center;
+}
+
+.main .tabs .tab-item-active {
+	border-bottom: 2px solid #FF3800;
+	color: #FF3800;
+}
+
+.main .orders {
+	width: 100%;
+	margin-top: 0.277777rem;
+}
+
+.main .noorder {
+	width: 100%;
+	text-align: center;
+}
+
+.main .noorder .empty {
+	padding-top: 2rem;
+}
+
+.main .noorder .empty img {
+	width: 1.944444rem;
+	height: 1.944444rem;
+	margin: auto;
+}
+
+.main .noorder .empty .circle {
+	width: 2.777777rem;
+	height: 2.777777rem;
+	background: #FFD600;
+	border-radius: 50%;
+	display: flex;
+	margin: auto;
+	margin-bottom: 0.277777rem;
+}
+.main .noorder .empty span{
+	color: #999999;
+}
+
+
+
+
+
+
+
+
+

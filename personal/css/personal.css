@@ -1,0 +1,193 @@
+html{
+	font-size: 36px;
+}
+header {
+    width: 100%;
+    height: 4.777777rem;
+    background: #FFD600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+header .top {
+    width: 100%;
+    height: 3.111111rem;
+    display: flex;
+    padding-top: 0.555555rem;
+    padding-left: 0.555555rem;
+}
+
+header .top > img {
+    width: 2.361111rem;
+    height: 2.361111rem;
+}
+
+header .top-right {
+    width: 60%;
+    padding: 0.277777rem 0 0 0.555555rem;
+    color: #fff;
+    position: relative;
+}
+
+header .top-right .user-level {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 0.333333rem;
+    color: #FD4B42;
+    background: url("../img/logon.png") 0 20% no-repeat;
+    background-size: 90% 60%;
+}
+
+header .top-right .user-level span {
+    display: inline-block;
+    padding-top: 0.277777rem;
+    padding-left: 0.138888rem;
+}
+
+header .top-right .more {
+    font-size: 1.388888rem;
+    position: absolute;
+    top: 0.277777rem;
+    right: 0;
+}
+
+header .bottom {
+    width: 100%;
+    background: #f3c800;
+    display: flex;
+    text-align: center;
+    padding: 0.222222rem 0;
+}
+
+header .bottom .left {
+    width: 50%;
+    height: 80%;
+    color: #fff;
+    border-right: 1px solid #fff;
+    background: url("../img/shangpinshoucang.png") 20% 50% no-repeat;
+    background-size: 15% 100%;
+}
+
+header .bottom .right {
+    width: 50%;
+    height: 80%;
+    color: #fff;
+    background: url("../img/dianpushoucang.png") 20% 50% no-repeat;
+    background-size: 15% 100%;
+}
+
+header .bottom span {
+    display: inline-block;
+    margin-left: 0.833333rem;
+}
+
+main {
+    position: absolute;
+    top: 4.777777rem;
+    bottom: 2.222222rem;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+main .order {
+    width: 100%;
+    height: 4.055555rem;
+    background: #fff;
+    margin-top: 0.555555rem;
+}
+
+main .order .top {
+    width: 100%;
+    padding: 0.555555rem 0;
+    display: flex;
+    color: #666;
+    font-size: 0.416666rem;
+    border-bottom: 1px solid #ccc;
+}
+
+main .order .top .top-left {
+    width: 61%;
+    padding-left:0.555555rem;
+}
+
+main .order .top .top-right .icon-angle-right {
+    font-size: 0.555555rem;
+}
+
+main .order .bottom {
+    width: 100%;
+}
+
+main .order .bottom ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .order .bottom ul li {
+    width: 25%;
+    line-height: 0.833333rem;
+    padding: 0.694444rem 0 0 0.277777rem;
+    text-align: center;
+    font-size: 0.361111rem;
+}
+
+main .order .bottom figure img {
+    width: 0.555555rem;
+    height: 0.555555rem;
+    margin: auto;
+}
+
+main .core-entry {
+    width: 100%;
+    background: #fff;
+    margin-top: 0.555555rem;
+}
+
+main .core-entry ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .core-entry ul li {
+    text-align: center;
+    width: 25%;
+    height: 3.111111rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.361111rem;
+}
+
+main .core-entry ul li:nth-of-type(5) {
+    border-bottom: none;
+}
+main .core-entry ul li:nth-of-type(6) {
+    border-bottom: none;
+}
+
+main .core-entry ul li a {
+    display: inline-block;
+}
+
+main .core-entry ul li figcaption {
+    margin-top: 0.138888rem;
+}
+
+main .core-entry figure img {
+    width: 0.833333rem;
+    height: 0.833333rem;
+    margin: 0.972222rem auto 0;
+}
+
+main .foot {
+    width: 100%;
+    height: 1.388888rem;
+    line-height: 1.388888rem;
+    margin-top: 1.111111rem;
+    background: #fff;
+    text-align: center;
+    color: #666;
+}

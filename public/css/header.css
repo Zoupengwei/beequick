@@ -1,0 +1,55 @@
+header {
+    height: 1.666666rem;
+    width: 100%;
+    background: #FFD600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+header .left {
+    width: 15%;
+    height: 100%;
+    padding: 0.277777rem 0 0 0.277777rem;
+}
+
+header .left img {
+    width: 0.694444rem;
+    height: 0.694444rem;
+}
+
+header .left p {
+    width: 100%;
+}
+
+header .center {
+    width: 70%;
+    height: 100%;
+    line-height: 1.666666rem;
+    text-align: center;
+}
+
+header .center .address {
+    font-size: 0.416666rem;
+    font-weight: bold;
+}
+
+header .center .icon-sort-down {
+    font-size: 0.555555rem;
+}
+
+header .right {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.277777rem;
+}
+
+header .right img {
+    width: 0.694444rem;
+    height: 0.694444rem;
+}

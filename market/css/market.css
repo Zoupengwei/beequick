@@ -1,0 +1,222 @@
+/*头部*/
+header{
+    background-color: #ffd600;
+    height: 1.718rem;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 100;
+}
+.header-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header-wrap > a:after{
+    content: "▼";
+    display: inline-block;
+}
+header .position{
+    font-weight: 700;
+    font-size: .48rem;
+}
+.icon-font{
+    display: inline-block;
+    width: .95rem;
+    height: .95rem;
+}
+.search{
+    background: url("../img/search.png") no-repeat right;
+    background-size: 80% 80%;
+}
+header figure{
+    position: absolute;
+    right: .25rem;
+    top:.12rem;
+}
+header figure figcaption{
+    margin-top: -.1rem;
+}
+header figure figcaption a{
+    font-size: .4rem;
+}
+/*商品内容*/
+main{
+    position: relative;
+    top:1.718rem;
+    background-color: #fff;
+}
+/*商品左边 目录栏*/
+.goods-content-wrap{
+    position: relative;
+}
+.goods-category{
+    position: fixed;
+    top:1.718rem;
+    left: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    height: 14.653rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.goods-category::-webkit-scrollbar{
+    display: none;
+}
+.goods-category-list li{
+    width: 2.375rem;
+    height: 1.25rem;
+    padding: .1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+.goods-category-list li a{
+    color: #6d6d6d;
+    line-height: 1.25rem;
+    display: block;
+    font-size: .4rem;
+}
+.current{
+    border-left: .2rem solid #ffd600;
+}
+
+/*商品右边 商品列表*/
+/*商品列表头*/
+.hr-1-4{
+    height: 1.45rem;
+}
+.goods-list{
+    position: absolute;
+    left: 2.375rem;
+    height: 14.653rem;
+    top:0;
+    bottom: 0;
+    right: 0;
+    color: #777;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.goods-list::-webkit-scrollbar{
+    display: none;
+}
+.goods-list a{
+    color: #777;
+}
+/*商品列表 分类固定*/
+.goods-list .title{
+    position: fixed;
+    z-index: 10;
+    top:1.718rem;
+    left: 2.375rem;
+    right: 0;
+}
+
+.goods-list .title .filter-titles{
+    display: flex;
+    height: 1.45rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: .2rem;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255,255,255,.95);
+}
+.goods-list .title .filter-titles li{
+    width: 50%;
+    text-align: center;
+    padding: .3rem 0;
+    border-right: 1px solid #e0e0e0;
+    font-size: .4rem;
+}
+.goods-list .title .filter-titles li:after{
+    content: ' ';
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAOCAMAAAAG0/xxAAAANlBMVEX////y8vLn5+fX19jMzMy9vL6op6qmpKebmp1+fIFycXVjYGZRTlRLSU9JRkxAPUQuKzItKjGYPIi+AAAAAXRSTlMAQObYZgAAAFtJREFUGNNtzkESgCAMQ9FYxIKgNfe/rBsZkJLdn7cJIBGLhR2QeqsXrVeAPDRnamQEMp2pkXkDxFkyMgvgrctsychTWo32l9Fm6aZOmq3ks+HbbGsB5CjlGOQFS24F+jg8XL0AAAAASUVORK5CYII=") no-repeat;
+    width: .4rem;
+    height: .2rem;
+    display: inline-block;
+    background-size: 100% 100%;
+    margin-left: .2rem;
+    vertical-align: .04rem;
+}
+/*分类隐藏块*/
+.filter-items{
+    position: absolute;
+    padding-top:.15rem;
+    padding-left: .4rem;
+    padding-bottom: .4rem;
+    background-color: #fff;
+    /*隐藏隐藏块*/
+    display: none;
+}
+.filter-items li{
+    padding: .18rem;
+    float: left;
+    border: 1px solid #ffd600;
+    border-radius: .2rem;
+    margin-right: .25rem;
+    margin-top: .25rem;
+}
+.filter-items-current {
+    background-color: #fff9d9;
+}
+/*商品列表项*/
+.goods-items{
+    padding: .2rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+.product-image{
+    width: 3rem;
+    height: 3rem;
+    margin:0 .2rem;
+}
+.product-image{
+    float: left;
+}
+.p-ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.p-title{
+    color: #232b33;
+    font-size: .4rem;
+    line-height: .8rem;
+}
+.p-tag{
+    display: inline-block;
+    font-size: .35rem;
+    border-radius: .1rem;
+    padding: 0 .1rem;
+    margin: .2rem 0;
+}
+.selection{
+    color: #FF0000;
+    border: 2px solid;
+}
+.gift{
+    color: #fff;
+    background-color: #FF0000;
+    border: 2px solid;
+}
+.p-intro{
+    font-size: .4rem;
+    color: #999;
+    line-height: .8rem;
+}
+.p-price{
+    font-size: .4rem;
+    color: #ff3800;
+    line-height: .8rem;
+}
+.add-goods{
+    position: absolute;
+    background:#ff3800 url("../img/add.png") no-repeat;
+    background-size: contain;
+    right: .6rem;
+    bottom: .4rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+}

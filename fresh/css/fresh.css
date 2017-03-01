@@ -1,0 +1,141 @@
+body {
+    background-color: #e0e0e0;
+    color: #898989;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #898989;
+    display: block;
+}
+
+em {
+    font-style: normal;
+}
+
+/*头部*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header-wrap {
+    height: 1.718rem;
+    background-color: #F9FAFD;
+    text-align: center;
+    font-weight: 700;
+    font-size: .48rem;
+    line-height: 1.718rem;
+}
+
+/*内容*/
+main {
+    position: relative;
+    top: 1.718rem;
+    /*bottom: 1.718rem;*/
+    margin-bottom: 1.718rem;
+    /*margin-top: .3rem;*/
+}
+
+/*<!--选择分类-->*/
+.select-tag {
+
+}
+
+.select-tag-list {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: .05rem;
+    padding: 0 .2rem;
+    text-align: center;
+}
+
+.select-tag-list li {
+    width: 25%;
+    font-size: .4rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.select-tag-list li a {
+    color: #898989;
+    display: block;
+    height: 100%;
+}
+
+.select-tag-list li .sel {
+    color: #595656;
+    border-bottom: .05rem solid #595656;
+}
+
+/*<!--精选水果-->*/
+.selection-fruits {
+    position: relative;
+    margin-top: .6rem;
+}
+
+.selection-fruits .list-title {
+    background-color: #fff;
+    font-size: .4rem;
+    color: #898989;
+    line-height: .61rem;
+    padding: .25rem;
+    border-bottom: .05rem solid #e0e0e0;
+}
+
+.selection-fruits .list-title:before {
+    content: " ";
+    display: inline-block;
+    width: .1rem;
+    background-color: #2AAEF9;
+    height: .4rem;;
+    vertical-align: middle;
+    margin-right: .2rem;
+}
+
+.fruits-item {
+    background-color: #fff;
+    border-bottom: .05rem solid #e0e0e0;
+    padding: .5rem;
+    height: 3rem;
+    font-size: .4rem;
+}
+
+.fruits-item .p-pic {
+    float: left;
+    width: 4rem;
+    height: 3rem;
+    margin-right: .3rem;
+}
+
+.p-price {
+    color: #F1361D;
+    margin-top: 1.2rem;
+}
+
+.p-price em {
+    font-weight: 700;
+    font-size: .5rem;
+}
+
+.addCar {
+    position: relative;
+}
+
+.icon-font {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: url("../img/20170228180438.png") no-repeat;
+    border-radius: 50%;
+    right: 0;
+    bottom: -.1rem;;
+}
+

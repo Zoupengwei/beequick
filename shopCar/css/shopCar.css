@@ -1,0 +1,226 @@
+body{
+    background-color: #EFEFEF;
+}
+i,em{
+    font-style: normal;
+}
+/*头部*/
+header{
+    position: relative;
+}
+.header-wrap{
+    height: 1.718rem;
+    background-color: #F9FAFD;
+    text-align: center;
+    font-weight: 700;
+    font-size: .48rem;
+    line-height: 1.718rem;
+}
+/*用户位置*/
+.position{
+    background-color: #fff;
+    font-size: .5rem;
+    padding: .4rem;
+    border-top: 1px solid #E0E0E0;
+}
+.position a{
+    color: #E95F2E;
+}
+/*优惠消息*/
+.discount-info{
+    position: relative;
+    padding: .2rem .4rem;
+    background-color: #fff;
+    margin-top: .3rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+.discount-module{
+    font-size: .38rem;
+    color: #999;
+}
+.discount-module:before{
+    content: "";
+    display: inline-block;
+    width: .2rem;
+    height: .4rem;
+    background-color: #ffd600;
+    border-radius: .5rem;
+    vertical-align: middle;
+    margin-right: .3rem;
+}
+.discount-cont{
+    font-size: .35rem;
+    color: #999;
+    margin-top: .4rem;
+}
+/*收货信息*/
+.receipt-goods{
+    position: relative;
+}
+.receipt-time,.receipt-remarks{
+    font-size: .5rem;
+    padding: .4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #E0E0E0;
+}
+.receipt-time i{
+    color: #E95F2E;
+    margin-left: .3rem;
+}
+.book{
+    float: right;
+}
+.book:after{
+    content:"";
+    display: inline-block;
+    background: url("../img/right.png");
+    background-size: 100% 100%;
+    width: .3rem;
+    height: .3rem;
+    margin-left: .1rem;
+}
+
+.receipt-remarks{
+    padding: .2rem .4rem;
+}
+.remarks{
+    width: 6.3rem;
+    height: 1rem;
+    border: 2px solid #CECECE;
+    border-radius: .2rem;
+    margin-left: .3rem;
+    font-size: .4rem;
+    padding-left: .2rem;
+}
+/*购物车商品列表*/
+.carContent{
+    position: relative;
+    border-bottom: 1px solid #CECECE;
+}
+.car-goods-item{
+    background-color: #fff;
+    overflow: hidden;
+}
+.checkbox{
+    float: left;
+    padding: 1.3rem .8rem;
+}
+.goods-info{
+    overflow: hidden;
+    display: flex;
+    padding: .3rem .4rem .3rem 0;
+    position: relative;
+}
+.p-pic{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.p-pic img{
+    width: 100%;
+    height: 100%;
+}
+.p-intro{
+    margin-left: .4rem;
+}
+.p-title{
+    font-size: .5rem;
+}
+.p-price{
+    font-size: .4rem;
+    margin-top: 1.1rem;
+}
+.btns{
+    position: absolute;
+    right: .4rem;
+    bottom: .4rem;
+}
+.btns span{
+    font-size: .4rem;
+    vertical-align: middle;
+}
+.num{
+    margin: 0 .25rem;
+}
+.goods-info .icon-font{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #FF4300;
+    border-radius: 50%;
+}
+.add{
+    background:#FF4300 url("../img/add.png");
+    background-size: 100% 100%;
+}
+.reduce{
+    background:#FF4300 url("../img/reduce.png");
+    background-size: 100% 100%;
+}
+
+/*小结*/
+.summary{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: .5rem;
+    margin-bottom: .3rem;
+}
+.summary .checkbox{
+    padding: .68rem;;
+}
+.total em{
+    color: #E64F1A;
+}
+.subBtn{
+    width: 33%;
+    height: 2rem;
+    background-color: #808080;
+    background-origin: border-box;
+    line-height: 2rem;
+}
+.select-goods{
+    background-color: #FFD600;
+}
+/*更改input样式*/
+.checkbox span{
+    position: relative;
+}
+.input_check{
+    position: absolute;
+    visibility: hidden;
+    width: .6rem;
+    height: .6rem;
+}
+.checkall{
+    margin-right: .3rem;
+}
+.checkbox .input_check+label{
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+}
+.checkbox .input_check:checked+label{
+    background-color: #F8CC0B;
+}
+.checkbox .input_check:checked+label:after{
+    content: "";
+    position: absolute;
+    width: .3rem;
+    height: .15rem;
+    border: 3px solid #fff;
+    transform: rotate(-45deg);
+    left: .15rem;
+    border-top: transparent;
+    border-right: transparent;
+    bottom: .25rem;
+}
+
+
