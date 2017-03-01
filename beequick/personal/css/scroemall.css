@@ -1,0 +1,136 @@
+html{
+	font-size: 36px;
+}
+header {
+    width: 100%;
+    background: #fff;
+}
+
+header .top {
+    width: 100%;
+    height: 1.388888rem;
+    line-height: 1.388888rem;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+header .top .left {
+    width: 10%;
+}
+
+header .top .left img {
+    width: 0.555555rem;
+    height: 0.555555rem;
+    margin: 0.416666rem auto;
+}
+
+header .top .right {
+    width: 80%;
+    text-align: center;
+}
+
+header .middle {
+    width: 100%;
+    height: 5rem;
+    /*display: flex;
+    justify-content: center;*/
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+header .middle p {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 42%;
+}
+
+header .middle .wrap {
+    border: 0.555555rem solid #EF592A;
+    padding: 1.666666rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 28%;
+}
+
+header .middle .inner {
+    text-align: center;
+    padding: 1.388888rem;
+    border: 0.277777rem solid #E13600;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .bottom {
+    width: 100%;
+}
+
+header .bottom ul {
+    display: flex;
+}
+
+header .bottom ul li {
+    width: 33.3%;
+    padding: 1.388888rem 0.555555rem 0.277777rem 0.555555rem;
+    text-align: center;
+    font-size: 0.361111rem;
+    border-right: 1px solid #ccc;
+}
+
+header .bottom ul li:nth-last-of-type(1) {
+    border-right: none;
+}
+
+header .bottom ul li:nth-of-type(1) {
+    background: url("../img-score/in1.png") 50% 30% no-repeat;
+    background-size: 25%;
+}
+
+header .bottom ul li:nth-of-type(2) {
+    background: url("../img-score/in2.png") 50% 30% no-repeat;
+    background-size: 25%;
+}
+
+header .bottom ul li:nth-of-type(3) {
+    background: url("../img-score/in3.png") 50% 30% no-repeat;
+    background-size: 25%;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.555555rem;
+    background: #fff;
+}
+
+main ul li {
+    width: 49.8%;
+    border-bottom: 1px solid #ccc;
+    padding: 0.277777rem 0;
+}
+
+main ul li:nth-last-of-type(1) {
+    border-bottom: none;
+}
+
+main ul li:nth-last-of-type(2) {
+    border-bottom: none;
+}
+
+main ul li:nth-of-type(odd) {
+    border-right: 1px solid #ccc;
+}
+
+main ul li p {
+    font-size: 0.333333rem;
+    line-height: 2;
+    padding-left: 0.555555rem;
+}
+
+main ul li .desc {
+    color: #E75723;
+}

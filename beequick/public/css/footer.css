@@ -1,0 +1,31 @@
+footer {
+    height: 1.666666rem;
+    width: 100%;
+    background: rgba(246, 246, 246, 0.95);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+footer ul li figure img {
+    width: 0.777777rem;
+    height: 0.777777rem;
+    margin: 0 auto;
+    margin-top: 0.277777rem;
+}
+
+footer ul li figure figcaption {
+    font-size: 0.388888rem;
+    color: #333;
+}

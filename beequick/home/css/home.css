@@ -1,0 +1,294 @@
+
+.content {
+    position: absolute;
+    top: 1.666666rem;
+    bottom: 1.666666rem;
+    left: 0;
+    right: 0;
+    width: 10rem;
+    overflow: auto;
+}
+
+.menu {
+    width: 10rem;
+    height: 6.111111rem;
+    background: #fff;
+    margin-top: 0.555555rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    width: 9rem;
+    padding-bottom: 0.555555rem;
+}
+
+.menu ul li {
+    width: 25%;
+    height: 40%;
+    text-align: center;
+    margin-top: 0.277777rem;
+}
+
+.menu ul li img {
+    width: 100%;
+    height: 1.944444rem;
+    margin: 0 auto;
+}
+
+.menu ul li figcaption {
+    font-size: 0.388888rem;
+}
+
+.news {
+    width: 100%;
+    height: 1.111111rem;
+    line-height: 1.111111rem;
+    background: #fff;
+    margin-top: 0.555555rem;
+    display: flex;
+}
+
+.news .left {
+    width: 25%;
+    height: 70%;
+    margin: auto 0;
+    border-right: 1px solid #ccc;
+}
+
+.news .left img {
+    width: 100%;
+    height: 100%;
+}
+
+.news .right {
+    margin-left: 0.277777rem;
+    font-size: 0.361111rem;
+}
+
+.news .right .title {
+    color: #FF4848;
+    border: 1px solid #FF4848;
+    border-radius: 0.138888rem;
+    padding: 0 0.083333rem;
+}
+
+.news .right .desc {
+    color: #aFaFaF;
+}
+
+.maiyizengyi {
+    width: 100%;
+    height: 6.666666rem;
+    background: #fff;
+    margin-top: 0.555555rem;
+    display: flex;
+}
+
+.maiyizengyi > div:not(:nth-last-of-type(1)) {
+    border-right: 1px solid #ccc;
+}
+
+.maiyizengyi > div img {
+    width: 100%;
+    height: 100%;
+}
+
+.tejia {
+    width: 100%;
+    height: 5.555555rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.555555rem;
+}
+
+.tejia > div {
+    width: 49.8%;
+    height: 49.8%;
+    background: #fff;
+}
+
+.tejia .item1, .tejia .item2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.tejia .item1, .tejia .item3 {
+    border-right: 1px solid #ccc;
+}
+
+.tejia .item1 {
+    background: url("http://img01.bqstatic.com/upload/goods/000/000/2470/0000002470.jpg@200w_200h_90Q") no-repeat;
+    background-size: 100% 100%;
+}
+
+.tejia .item2 {
+    background: url("http://img01.bqstatic.com/upload/goods/000/000/2470/0000002470.jpg@200w_200h_90Q") no-repeat;
+    background-size: 100% 100%;
+}
+
+.tejia .item3 {
+    background: url("http://img01.bqstatic.com/upload/goods/000/000/2470/0000002470.jpg@200w_200h_90Q") no-repeat;
+    background-size: 100% 100%;
+}
+
+.tejia .item4 {
+    background: url("http://img01.bqstatic.com/upload/goods/000/000/2470/0000002470.jpg@200w_200h_90Q") no-repeat;
+    background-size: 100% 100%;
+}
+
+.category {
+    width: 100%;
+}
+
+.category .act-category {
+    width: 100%;
+}
+
+.act-category .act-category-item {
+    height: 10.555555rem;
+    margin-top: 0.555555rem;
+    background: #fff;
+}
+
+.act-category .act-category-item .act-category-item-header {
+    width: 100%;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    display: flex;
+}
+
+.act-category-item-header .left {
+    width: 85%;
+    padding-left: 0.277777rem;
+}
+
+.act-category-item-header .left .fangkuai {
+    width: 0.277777rem;
+    height: 0.555555rem;
+    display: inline-block;
+    background: #F38631;
+}
+
+.act-category-item-header .left .title {
+    display: inline-block;
+    font-size: 0.416666rem;
+    color: #F38631;
+    margin-left: 0.138888rem;
+}
+
+.act-category-item-header .right {
+    width: 15%;
+    height: 100%;
+}
+
+.act-category-item-header .right span {
+    display: inline-block;
+    font-size: 0.361111rem;
+    color: #666;
+}
+
+.act-category-item-header .right img {
+    display: inline-block;
+    width: 0.277777rem;
+    height: 0.277777rem;
+}
+
+.act-category .act-category-item .act-category-item-banner {
+    width: 100%;
+    height: 2.5rem;
+    background: url("http://img01.bqstatic.com//upload/activity/2016090718042575.jpg@90Q.jpg") center top no-repeat;
+    background-size: 94%;
+}
+
+.act-category-item-goodList {
+    width: 100%;
+    height: 5.972222rem;
+    margin-top: 0.277777rem;
+    display: flex;
+}
+
+.act-category-item-goodList .product-item {
+    width: 33.4%;
+    text-align: left;
+    border-right: 1px solid #ccc;
+    padding: 0 0.277777rem;
+}
+
+.act-category-item-goodList li:nth-last-of-type(1) {
+    border-right: none;
+}
+
+.product-item .pic {
+    width: 100%;
+    height: 3rem;
+    background: url("http://img01.bqstatic.com/upload/goods/000/009/7049/0000097049_25480.jpg@200w_200h_90Q") no-repeat;
+    background-size: 100% 100%;
+}
+
+.product-item .pro-title {
+    font-size: 0.388888rem;
+    line-height: 2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-item .discout {
+    width: 100%;
+}
+
+.product-item .jingxuan {
+    display: inline-block;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 0.138888rem;
+    padding: 0 0.083333rem;
+}
+
+.product-item .huodong {
+    display: inline-block;
+    color: #ffffff;
+    background: #FF0000;
+    border-radius: 0.138888rem;
+    padding: 0 0.138888rem;
+    margin-left: 0.138888rem;
+}
+
+.product-item .pro-desc {
+    width: 100%;
+    line-height: 2;
+    position: relative;
+}
+
+.product-item .pro-desc .specification {
+    color: #999;
+    width: 100%;
+}
+
+.product-item .pro-desc .price {
+    color: #ff3800;
+    display: inline-block;
+}
+
+.product-item .pro-desc .price .pass-price {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.product-item .pro-desc .add {
+    display: inline-block;
+    color: rgb(255, 67, 0);
+    font-size: 0.444444rem;
+    border: 1px solid rgb(255, 67, 0);
+    padding: 0.222222rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0.277777rem;
+}
+
+
