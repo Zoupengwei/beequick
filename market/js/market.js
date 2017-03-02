@@ -14,7 +14,7 @@ define(["jquery"],
 
         //获取数据
         function getData(param) {
-            $.get("http://h5.yztctech.net/api/axf/apicategory.php",{category:param},
+            $.get("http://h5.yztctech.net/api/axf/apicategory.php", {category: param},
                 function (req) {
                     // console.log(req);
                     var data = JSON.parse(req).data;
@@ -29,14 +29,16 @@ define(["jquery"],
                             '<span class="p-tag gift">' + data[i].pm_desc +
                             '</span></p><p class="p-intro p-ellipsis">' + data[i].specifics +
                             '</p><p class="p-price">￥' + data[i].price +
-                            '</p><a href="javascript:;"><span class="icon-font add-goods"></span></a>'
+                            '</p><a href="javascript:;"><span class="num"></span><span class="icon-font add-goods"></span></a>'
                     }
 
                     $("main .goods-list .allItem").html(html);
+
+                    changeNum($(".add-goods"), 1);
                 });
         }
 
-        //给每个li绑定点击事件
+        //给左侧边标题的每个li绑定点击事件
         function clickFn() {
             $(".goods-category-list li").click(function () {
                 //切换样式
@@ -45,6 +47,17 @@ define(["jquery"],
                 //获取该项的数据
                 getData($(this).children().text());
             });
+        }
+
+        //添加按钮的点击事件
+        function changeNum(btn, value) {
+            for (let i = 0; i < btn.length; i++) {
+                btn.eq(i).click(function () {
+                    $(".num").eq(i).show();
+                    $(".num").eq(i).val($(".num").val() + 1);
+                });
+            }
+            ;
         }
 
         return obj;

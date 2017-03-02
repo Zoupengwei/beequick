@@ -11,11 +11,12 @@ require.config({
         "text":         "public/lib/text",
         "swiper":       "public/lib/swiper-3.3.1.min",
         "router":       "./router",
+        "weChat":       "public/lib/jweixin-1.2.0",
     }
 });
 
 
-require(["flexible", "router"],
-    function (flexible, router) {
+require(["flexible", "router","weChat"],
+    function (flexible, router, wx) {
 
 });

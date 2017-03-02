@@ -1,0 +1,58 @@
+header {
+    width: 100%;
+    height: 1.666666rem;
+    line-height: 1.666666rem;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    background: #F9FAFD;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+
+header .left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+header .left a{
+    display: block;
+    margin: auto;
+}
+
+header .left img {
+    width: 0.555555rem;
+    height: 0.555555rem;
+}
+
+header .right {
+    width: 80%;
+    height: 100%;
+    color: #333;
+    vertical-align: baseline;
+}
+
+header .right .icon-search {
+    font-size: 0.416666rem;
+    color: #ccc;
+    padding: 0.222222rem;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+header form {
+    height: 100%;
+}
+
+#input-box {
+    width: 70%;
+    height: 50%;
+    margin-left: -0.138888rem;
+    border: 0;
+    outline: none;
+    background: #F9FAFD;
+    border: 1px solid #ccc;
+    border-left: none;
+}

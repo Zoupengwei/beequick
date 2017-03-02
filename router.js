@@ -23,6 +23,8 @@ define(["jquery", "underscore", "backbone"],
                 "scoremall": "scoremall",
                 //我的订单
                 "myOrder": "myOrder",
+                //搜索详情页
+                "search": "search",
             },
 
             //首页
@@ -63,7 +65,8 @@ define(["jquery", "underscore", "backbone"],
             "fresh": function () {
                 require(["text!./fresh/fresh.html", "./fresh/js/fresh"], function (tpl, ctrl) {
                     $("#content").html(tpl);
-                    ctrl.request();
+                    ctrl.getData();
+                    ctrl.clickFn();
 
                     $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
                     $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
@@ -125,6 +128,14 @@ define(["jquery", "underscore", "backbone"],
             "myOrder": function () {
                 require(["text!./myOrder/myorder.html"], function (tpl) {
                     $("#content").html(tpl);
+                });
+            },
+
+            //搜索详情页
+            "search": function () {
+                require(["text!./search/searchCategory.html"],function (tpl) {
+                    $("#content").html(tpl);
+                    $("footer").hide();
                 });
             },
 

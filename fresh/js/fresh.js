@@ -3,7 +3,12 @@
  */
 define(["jquery"], function ($) {
     var obj = {};
-    obj.request = function () {
+    obj.getData = getData;
+    obj.clickFn = clickFn;
+
+
+    //获取数据的函数
+    function getData() {
         $.ajax({
             type: "get",
             url: "http://h5.yztctech.net/api/axf/apiyuding.php",
@@ -27,7 +32,19 @@ define(["jquery"], function ($) {
                 $("main .selection-fruits .fruits-list").html(html);
             }
         });
-    };
+    }
+
+    //绑定点击事件
+    function clickFn() {
+        $(".select-tag-list li").click(function () {
+            //切换样式
+            $(this).find("a").addClass("sel");
+            $(this).siblings().find("a").removeClass("sel");
+            $(this).parent().siblings().find("a").removeClass("sel");
+            $(".selection-fruits .list-title").html($(this).find("a").html());
+            // getData();
+        });
+    }
 
     return obj;
 });
