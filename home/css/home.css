@@ -224,7 +224,7 @@
 .product-item .pic {
     width: 100%;
     height: 3rem;
-    background: url("http://img01.bqstatic.com/upload/goods/000/009/7049/0000097049_25480.jpg@200w_200h_90Q") no-repeat;
+    /*background: url("http://img01.bqstatic.com/upload/goods/000/009/7049/0000097049_25480.jpg@200w_200h_90Q") no-repeat;*/
     background-size: 100% 100%;
 }
 

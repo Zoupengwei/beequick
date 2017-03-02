@@ -1,9 +1,10 @@
-html{
-	font-size: 36px;
+html {
+    font-size: 36px;
 }
+
 header {
     width: 100%;
-    height: 4.777777rem;
+    height: 4.6rem;
     background: #FFD600;
     position: fixed;
     top: 0;
@@ -110,9 +111,13 @@ main .order .top {
     border-bottom: 1px solid #ccc;
 }
 
+main .order > a {
+    display: block;
+}
+
 main .order .top .top-left {
     width: 61%;
-    padding-left:0.555555rem;
+    padding-left: 0.555555rem;
 }
 
 main .order .top .top-right .icon-angle-right {
@@ -164,6 +169,7 @@ main .core-entry ul li {
 main .core-entry ul li:nth-of-type(5) {
     border-bottom: none;
 }
+
 main .core-entry ul li:nth-of-type(6) {
     border-bottom: none;
 }

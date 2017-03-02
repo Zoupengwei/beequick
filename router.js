@@ -6,6 +6,7 @@ define(["jquery", "underscore", "backbone"],
     function ($, _, backbone) {
         var w = backbone.Router.extend({
             routes: {
+                //触发的锚点
                 //首页
                 "home": "home",
                 //疯狂秒杀
@@ -24,10 +25,12 @@ define(["jquery", "underscore", "backbone"],
                 "myOrder": "myOrder",
             },
 
+            //首页
             "home": function () {
                 require(["text!./home/home.html", "./home/js/home"], function (tpl, ctrl) {
                     $("#content").html(tpl);
-                    ctrl.request();
+                    ctrl.getSwipeMenuData();
+                    ctrl.getMainData();
                     $("footer").show();
 
                     $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
@@ -39,31 +42,29 @@ define(["jquery", "underscore", "backbone"],
                 });
             },
 
-            "personal": function () {
-                require(["text!./personal/personal.html"], function (tpl) {
+            //闪送超市
+            "market": function () {
+                require(["text!./market/market.html", "./market/js/market"], function (tpl, ctrl) {
                     $("#content").html(tpl);
-                    $("footer").show();
-                    $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my2.png");
-                    $("footer li:nth-of-type(3) figure img").attr("src", "./public/img/order.png");
+                    // ctrl.getData("热销榜");
+                    ctrl.clickFn();
+                    //模拟点击事件，让一加载页面就有数据显示
+                    $(".goods-category-list li:eq(0)").trigger('click');
+
+                    $("footer li:nth-of-type(2) figure img").attr("src", "./public/img/foudre2.png");
                     $("footer li:nth-of-type(4) figure img").attr("src", "./public/img/shop.png");
-                    $("footer li:nth-of-type(2) figure img").attr("src", "./public/img/foudre.png");
+                    $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
                     $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
-
+                    $("footer li:nth-of-type(3) figure img").attr("src", "./public/img/order.png");
                 });
             },
 
-            "crazyShop": function () {
-                require(["text!./crazyShop/crazyShop.html", "./crazyShop/js/crazyShop"], function (tpl, ctrl) {
-                    $("#content").html(tpl);
-                    $("footer").hide();
-                    ctrl.request();
-                });
-            },
-
+            //新鲜预定
             "fresh": function () {
                 require(["text!./fresh/fresh.html", "./fresh/js/fresh"], function (tpl, ctrl) {
                     $("#content").html(tpl);
                     ctrl.request();
+
                     $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
                     $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
                     $("footer li:nth-of-type(3) figure img").attr("src", "./public/img/order2.png");
@@ -74,10 +75,11 @@ define(["jquery", "underscore", "backbone"],
                 });
             },
 
-
+            //购物车
             "shopCar": function () {
                 require(["text!./shopCar/shopCar.html", "./shopCar/js/shopCar"], function (tpl, ctrl) {
                     $("#content").html(tpl);
+
                     $("footer li:nth-of-type(4) figure img").attr("src", "./public/img/shop2.png");
                     $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
                     $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
@@ -86,17 +88,32 @@ define(["jquery", "underscore", "backbone"],
                 });
             },
 
-            "market": function () {
-                require(["text!./market/market.html", "./market/js/market"], function (tpl, ctrl) {
+
+            //我的
+            "personal": function () {
+                require(["text!./personal/personal.html"], function (tpl) {
                     $("#content").html(tpl);
-                    $("footer li:nth-of-type(2) figure img").attr("src", "./public/img/foudre2.png");
-                    $("footer li:nth-of-type(4) figure img").attr("src", "./public/img/shop.png");
-                    $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my.png");
-                    $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
+                    $("footer").show();
+
+                    $("footer li:nth-last-of-type(1) figure img").attr("src", "./public/img/my2.png");
                     $("footer li:nth-of-type(3) figure img").attr("src", "./public/img/order.png");
+                    $("footer li:nth-of-type(4) figure img").attr("src", "./public/img/shop.png");
+                    $("footer li:nth-of-type(2) figure img").attr("src", "./public/img/foudre.png");
+                    $("footer li:nth-of-type(1) figure img").attr("src", "./public/img/home2.png");
+
                 });
             },
 
+            //疯狂秒杀
+            "crazyShop": function () {
+                require(["text!./crazyShop/crazyShop.html", "./crazyShop/js/crazyShop"], function (tpl, ctrl) {
+                    $("#content").html(tpl);
+                    $("footer").hide();
+                    ctrl.request();
+                });
+            },
+
+            //积分商城
             "scoremall": function () {
                 require(["text!./scoremall/scoremall.html", "./scoremall/js/scoremall"], function (tpl, ctrl) {
                     $("#content").html(tpl);
@@ -104,13 +121,12 @@ define(["jquery", "underscore", "backbone"],
                 });
             },
 
-            "myOrder":function () {
-                require(["text!./myOrder/myorder.html"],function (tpl) {
+            //我的订单
+            "myOrder": function () {
+                require(["text!./myOrder/myorder.html"], function (tpl) {
                     $("#content").html(tpl);
                 });
             },
-
-
 
 
             //默认页面

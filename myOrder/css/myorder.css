@@ -15,11 +15,11 @@ header .left {
 	height: 100%;
 	display: flex;
 }
-
-header .left img {
+header .left a{
+	display: block;
+	margin: auto;
 	width: 0.694444rem;
 	height: 0.694444rem;
-	margin: auto;
 }
 
 header .center {
